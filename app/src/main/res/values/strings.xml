@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">El-Chef</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="facebook_app_id">2672798902747522</string>
+    <string name="fb_login_protocol_scheme">fb2672798902747522</string>
+
+    <string name="title_activity_chef_map">Map</string>
+
+    <string name="server_client_id">482039786754-fhvtr2egq6be6nh14a84fs5bic7rrcpe.apps.googleusercontent.com</string>
+
+</resources>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FE5722</color>
+    <color name="colorPrimaryDark">#DF3F23</color>
+    <color name="colorAccent">#DF3F23</color>
+    <color name="buttonColor">#DF3F23</color>
+    <color name="lightText">@android:color/white</color>
+    <color name="darkText">@android:color/black</color>
+    <color name="facebookButton">#3B5999</color>
+    <color name="twitterButton">#01A7FD</color>
+    <color name="gmailButton">#FF5722</color>
+    <color name="line">#ffffff</color>
+    <color name="openNowText">#05A200</color>
+    <color name="closesNowText">#B91F26</color>
+    <color name="restaurant_location">#C6C6C6</color>
+    <color name="circle_or_shape">#FDFDFD</color>
+    <color name="line_inside_button_twitter">#0590E5</color>
+    <color name="line_inside_button_facebook">#314F8F</color>
+    <color name="line_inside_button_gmail">#F12919</color>
+    <color name="line_inside_signup">#DB3F28</color>
+    <color name="fragments_background">#E8E8E8</color>
+    <color name="EditTextBackgroundTint">#BFECE6E6</color>
+    <color name="food_name">#8F8F8F</color>
+    <color name="food_name_details">#E8E8E8</color>
+    <color name="rating">#FFC601</color>
+    <color name="restaurant_name">#212121</color>
+    <color name="location_color">#A6A6A6</color>
+    <color name="textOpen">#51B469</color>
+    <color name="restaurant_details_line">#CECACA</color>
+    <color name="text_before_recycler">#F69273</color>
+    <color name="tabSelected">#F8F8F8</color>
+    <color name="checkbox_textColor">#EEEEED</color>
+
+
+</resources>

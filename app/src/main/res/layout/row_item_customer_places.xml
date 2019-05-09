@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="@dimen/_2sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginLeft="@dimen/_5sdp"
+        android:layout_marginRight="@dimen/_5sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/constrain_restaurantInformationContent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/cusomer_restaurant_image"
+                android:layout_width="@dimen/_60sdp"
+                android:layout_height="@dimen/_60sdp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:background="#C0BCBC"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/customer_restaurant_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="restaurant name"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="@dimen/_14ssp"
+                app:layout_constraintStart_toEndOf="@+id/cusomer_restaurant_image"
+                app:layout_constraintTop_toTopOf="@+id/cusomer_restaurant_image" />
+
+            <TextView
+                android:id="@+id/customer_restaurant_location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="restaurant location"
+                android:textColor="@color/restaurant_location"
+                android:textSize="@dimen/_12ssp"
+                app:layout_constraintStart_toStartOf="@+id/customer_restaurant_name"
+                app:layout_constraintTop_toBottomOf="@+id/customer_restaurant_name" />
+
+            <TextView
+                android:id="@+id/customer_open"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Open now"
+                android:visibility="invisible"
+                android:textColor="@color/openNowText"
+                android:textSize="@dimen/_12ssp"
+                app:layout_constraintStart_toStartOf="@+id/customer_restaurant_location"
+                app:layout_constraintTop_toBottomOf="@+id/customer_restaurant_location" />
+            <TextView
+                android:id="@+id/customer_closed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Closed now"
+                android:visibility="invisible"
+                android:textColor="@color/closesNowText"
+                android:textSize="@dimen/_12ssp"
+                app:layout_constraintStart_toStartOf="@+id/customer_restaurant_location"
+                app:layout_constraintTop_toBottomOf="@+id/customer_restaurant_location" />
+
+            <TextView
+                android:id="@+id/customer_rate_from_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:text="5"
+                android:textColor="@color/darkText"
+                app:layout_constraintBottom_toBottomOf="@+id/customer_open"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/customer_open" />
+
+            <TextView
+                android:id="@+id/customer_slash"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="1dp"
+                android:text="/"
+                android:textColor="@color/darkText"
+                app:layout_constraintBottom_toBottomOf="@+id/customer_rate_from_5"
+                app:layout_constraintEnd_toStartOf="@+id/customer_rate_from_5"
+                app:layout_constraintTop_toTopOf="@+id/customer_rate_from_5" />
+
+            <TextView
+                android:id="@+id/customer_rating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="1dp"
+                android:text="2"
+                android:textColor="@color/darkText"
+                app:layout_constraintBottom_toBottomOf="@+id/customer_rate_from_5"
+                app:layout_constraintEnd_toStartOf="@+id/customer_slash"
+                app:layout_constraintTop_toTopOf="@+id/customer_slash" />
+
+            <RatingBar
+                android:id="@+id/customer_go_rating"
+                style="?attr/ratingBarStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:isIndicator="true"
+                android:progressTint="@color/rating"
+                android:rating="2"
+                android:theme="@style/RatingBar"
+                app:layout_constraintEnd_toStartOf="@+id/customer_rating"
+                app:layout_constraintTop_toTopOf="@+id/customer_rating" />
+        </android.support.constraint.ConstraintLayout>
+
+    </android.support.v7.widget.CardView>
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#E8E8E8">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:id="@+id/lin_profile_information"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="@dimen/_minus10sdp"
+                    android:gravity="center">
+                    <com.github.florent37.shapeofview.shapes.DiagonalView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_100sdp"
+                        android:id="@+id/shape"
+                        app:shape_diagonal_angle="10"
+                        android:background="@color/colorPrimary"
+                        app:shape_diagonal_position="bottom">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scaleType="centerCrop"
+                            android:src="@color/colorPrimary" />
+
+                        <android.support.constraint.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/profile_name"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/_8sdp"
+                                android:layout_marginTop="@dimen/_20sdp"
+                                android:layout_marginEnd="@dimen/_8sdp"
+                                android:layout_marginBottom="@dimen/_8sdp"
+                                android:text="name"
+                                android:textColor="#FFFFFF"
+                                android:textSize="@dimen/_14ssp"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+                        </android.support.constraint.ConstraintLayout>
+
+                    </com.github.florent37.shapeofview.shapes.DiagonalView>
+                    <FrameLayout
+                        android:id="@+id/constraintLayout2"
+                        android:layout_width="@dimen/_120sdp"
+                        android:layout_height="@dimen/_120sdp"
+                        android:layout_marginTop="@dimen/_minus55sdp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginBottom="8dp"
+                        android:background="@drawable/pofile_photo">
+
+                        <ImageView
+                            android:id="@+id/profile_user_image"
+                            android:layout_width="@dimen/_120sdp"
+                            android:layout_height="@dimen/_120sdp"
+                            android:layout_marginTop="@dimen/_2sdp"
+                            android:scaleType="center"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_goneMarginEnd="@dimen/_2sdp" />
+
+                    </FrameLayout>
+                    <TextView
+                        android:id="@+id/profile_email"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ah@gmail.com"
+                        android:textColor="#555555"
+                        android:textSize="@dimen/_14ssp" />
+
+                    <TextView
+                        android:id="@+id/profile_phone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="010235489554"
+                        android:textColor="#555555"
+                        android:textSize="@dimen/_14ssp" />
+
+                    <TextView
+                        android:id="@+id/profile_location"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="mansoura"
+                        android:textColor="#555555"
+                        android:textSize="@dimen/_14ssp" />
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Change Password"
+                        android:layout_marginEnd="@dimen/_50sdp"
+                        android:layout_marginStart="@dimen/_50sdp"
+                        android:textColor="@color/lightText"
+                        android:textSize="@dimen/_15sdp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:textAllCaps="false"
+                        android:id="@+id/changePassBtn"
+                        android:background="@color/colorPrimary"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/lin_profile_information"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:layout_marginBottom="0dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_margin="@dimen/_5sdp">
+
+                        <View
+                            android:layout_width="@dimen/_160sdp"
+                            android:layout_height="@dimen/_1sdp"
+                            android:background="#AEAEAE" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_8sdp"
+                            android:text="Favourite Restaurant"
+                            android:layout_margin="@dimen/_5sdp"
+                            android:textColor="#2E2E2E"
+                            android:textSize="@dimen/_15ssp" />
+
+                        <View
+                            android:layout_width="@dimen/_160sdp"
+                            android:layout_height="@dimen/_1sdp"
+                            android:background="#AEAEAE" />
+
+
+                    </LinearLayout>
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/recyclerView_favourite_list"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="@dimen/_8sdp">
+
+                    </android.support.v7.widget.RecyclerView>
+
+                </LinearLayout>
+            </RelativeLayout>
+        </ScrollView>
+
+    </android.support.v4.widget.NestedScrollView>
+
+</RelativeLayout>
